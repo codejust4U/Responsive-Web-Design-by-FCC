@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" cpntent="width=device-width, initial-scale=1.0">
+  <title>Library Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form of Library</h1>
+  <p id="description">Thank you for giving your precious time in this survey.</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name please" required><br>
+      <label for="name" id="email-label">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="Your email please" required><br>
+      <label for="name" id="number-label">Number</label><br>
+      <input type="number" id="number" min="7" max="15" placeholder="Your number please"><br>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">What's your current course?</label><br>
+      <select id="dropdown">
+    <option name="course" value="engineering" selected>Engineering</option>
+    <option name="course" value="pharmacy">Pharmacy</option>
+    <option name="course" value="management">Management</option>
+    <option name="course" value="law">Law</option>
+    </select><br>
+      <label for="gender">Gender:</label><br>
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+    </fieldset>
+
+    <fieldset>
+      <label for="checkboxes">What do you want to be?</label><br>
+      <fieldset id="checkboxes">
+        <input type="checkbox" value="software engineering">Software Engineering
+        <br>
+        <input type="checkbox" value="data scientist">Data Scientist
+        <br>
+        <input type="checkbox" value="full stack developer">Full Stack Developer<br>
+        <input type="checkbox" value="pharmacist">Pharmacist<br>
+        <input type="checkbox" value="lawyer">Lawyer<br>
+        <input type="checkbox" value="business analyst">Business Analyst<br>
+        <input type="checkbox" value="finance manager">Finance Manager<br>
+      </fieldset>
+    </fieldset>
+    <fieldset>
+      <label>Any suggestions?</label>
+      <textarea placeholder="Suggestions......."></textarea>
+    </fieldset>
+    <fieldset>
+      <button type="submit" id="submit" name="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
+
+</html>
