@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentaion Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentaion</header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li><a class="nav-link" href="#Conditional_Statements">Conditional Statements</a></li>
+        <li><a class="nav-link" href="#Loops_in_python">Loops in python</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>
+          Python is an easy to learn, powerful programming language. It has
+          efficient high-level data structures and a simple but effective
+          approach to object-oriented programming. Python’s elegant syntax and
+          dynamic typing, together with its interpreted nature, make it an ideal
+          language for scripting and rapid application development in many areas
+          on most platforms.
+        </p>
+        <p>
+          The Python interpreter and the extensive standard library are freely
+          available in source or binary form for all major platforms from the
+          Python web site, https://www.python.org/, and may be freely
+          distributed. The same site also contains distributions of and pointers
+          to many free third party Python modules, programs and tools, and
+          additional documentation.
+        </p>
+        <p>
+          The Python interpreter is easily extended with new functions and data
+          types implemented in C or C++ (or other languages callable from C).
+          Python is also suitable as an extension language for customizable
+          applications.
+        </p>
+        <ul>
+          <li>
+            The Python interpreter is usually installed as
+            /usr/local/bin/python3.12 on those machines where it is available;
+            putting /usr/local/bin in your Unix shell’s search path makes it
+            possible to start it by typing the command:
+          </li>
+          <li>
+            On Windows machines where you have installed Python from the
+            Microsoft Store, the python3.12 command will be available. If you
+            have the py.exe launcher installed, you can use the py command. See
+            Excursus: Setting environment variables for other ways to launch
+            Python
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <p>
+          Built-in Data Types In programming, data type is an important concept.
+          Variables can store data of different types, and different types can
+          do different things.
+        </p>
+        <p>
+          Python has the following data types built-in by default, in these
+          categories:
+        </p>
+        <ul>
+          <li>Text Type: str</li>
+          <li>Numeric Types: int, float, complex</li>
+          <li>Sequence Types: list, tuple, range</li>
+          <li>Mapping Type: dict</li>
+          <li>Set Types: set, frozenset</li>
+          <li>Boolean Type: bool</li>
+          <li>Binary Types: bytes, bytearray, memoryview</li>
+          <li>None Type: NoneType</li>
+        </ul>
+        <code>
+          x = 5
+          <br />
+          print(type(x))
+        </code>
+      </section>
+      <hr />
+
+      <section class="main-section" id="Conditional_Statements">
+        <header>Conditional Statements</header>
+        <p>Python Conditions and If statements</p>
+        <p>
+          These conditions can be used in several ways, most commonly in "if
+          statements" and loops. An "if statement" is written by using the if
+          keyword.
+        </p>
+        <p>Python supports the usual logical conditions from mathematics:</p>
+        <ul>
+          <li>Equals: a == b</li>
+          <li>Not Equals: a != b</li>
+          <li>Less than: a < b</li>
+          <li>Less than or equal to: a <= b</li>
+          <li>Greater than: a > b</li>
+          <li>Greater than or equal to: a >= b</li>
+        </ul>
+        <code>
+          a = 33 <br />
+
+          b = 200 <br />
+
+          if b > a: <br />
+          print("b is greater than a") <br />
+        </code>
+      </section>
+      <hr />
+
+      <section class="main-section" id="Loops_in_python">
+        <header>Loops in python</header>
+        <p>
+          The while Loop With the while loop we can execute a set of statements
+          as long as a condition is true.
+        </p>
+        <img
+          src="https://dnycf48t040dh.cloudfront.net/While-loops-in-Python.png"
+          alt="while loop image"
+          width="300px"
+        />
+        <code>
+          i = 1 <br />
+          while i < 6: <br />
+          print(i) <br />
+          i += 1 <br />
+        </code>
+        <p>
+          Python For Loops A for loop is used for iterating over a sequence
+          (that is either a list, a tuple, a dictionary, a set, or a string).
+          This is less like the for keyword in other programming languages, and
+          works more like an iterator method as found in other object-orientated
+          programming languages.
+        </p>
+        <img
+          src="https://files.realpython.com/media/Python-for-Loops-Definite-Iteration_Watermarked.9c0d36b6de30.jpg"
+          alt="for loops image"
+          width="300px"
+        />
+        <code>
+          <br />
+          fruits = ["apple", "banana", "cherry"] <br />
+          for x in fruits: <br />
+          print(x) <br />
+        </code>
+      </section>
+      <hr />
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          A function is a block of code which only runs when it is called. You
+          can pass data, known as parameters, into a function. A function can
+          return data as a result.
+        </p>
+        <p>
+          Creating a Function In Python a function is defined using the def
+          keyword:
+        </p>
+        <p>
+          Calling a Function To call a function, use the function name followed
+          by parenthesis:
+        </p>
+        <p>
+          Arguments Information can be passed into functions as arguments.
+          Arguments are specified after the function name, inside the
+          parentheses. You can add as many arguments as you want, just separate
+          them with a comma
+        </p>
+        <img
+          src="https://i0.wp.com/innovationyourself.com/wp-content/uploads/2021/09/Screenshot-2021-09-26-at-2.11.35-AM.png?resize=752%2C440&ssl=1"
+          alt="functions image"
+          width="400px"
+        />
+        <code>
+          <br />
+          def my_function(fname): <br />
+          print(fname + " Refsnes") <br />
+
+          my_function("Emil") <br />
+          my_function("Tobias") <br />
+          my_function("Linus") <br />
+        </code>
+      </section>
+    </main>
+  </body>
+</html>
